@@ -1,0 +1,37 @@
+"use strict"
+
+const sticky = document.querySelector('header');
+window.addEventListener('scroll', function () {
+	if (window.scrollY > 1) {
+		sticky.classList.add('header__sticky');
+	} else {
+		sticky.classList.remove('header__sticky');
+	}
+});
+
+// Многоуровневое меню
+const isMobile = {
+	Android: function () {
+		return navigator.userAgent.match(/Android/i);
+	},
+	BlackBerry: function () {
+		return navigator.userAgent.match(/BlackBerry/i);
+	},
+	iOS: function () {
+		return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+	},
+	Opera: function () {
+		return navigator.userAgent.match(/Opera Mini/i);
+	},
+	Windows: function () {
+		return navigator.userAgent.match(/IEMobile/i);
+	},
+	any: function () {
+		return (
+			isMobile.Android() ||
+			isMobile.BlackBerry() ||
+			isMobile.iOS() ||
+			isMobile.Opera() ||
+			isMobile.Windows());
+	}
+};

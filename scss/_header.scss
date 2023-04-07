@@ -22,6 +22,7 @@
 		font-weight: 800;
 		font-size: 24px;
 		letter-spacing: 0.01em;
+		cursor: pointer;
 	}
 	&__cart {
 		display: flex;
@@ -34,10 +35,11 @@
 	font-size: 18px;
 	margin: 0px 10px 0px 0px;
 }
-.navigation{
+.navigation {
 	&__group-item {
 		display: flex;
 		justify-content: center;
+		cursor: pointer;
 	}
 	&__item {
 		display: flex;
@@ -72,6 +74,7 @@
 		display: flex;
 		align-items: center;
 		position: relative;
+		cursor: pointer;
 	}
 	&__button-icon {
 	}
