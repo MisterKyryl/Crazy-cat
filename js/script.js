@@ -1,5 +1,6 @@
 "use strict"
 
+// Скролл событие
 const sticky = document.querySelector('header');
 window.addEventListener('scroll', function () {
 	if (window.scrollY > 1) {

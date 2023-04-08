@@ -94,6 +94,47 @@ body {
   align-items: center;
   position: relative;
 }
+.header .sticky__logo {
+  display: none;
+}
+.header .sticky__button-icon {
+  display: none;
+}
+
+.header__sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 100px 80px rgba(0, 0, 0, 0.031372549), 0 41.7776px 33.4221px rgba(0, 0, 0, 0.0196078431), 0 22.3363px 17.869px rgba(0, 0, 0, 0.0196078431), 0 12.5216px 10.0172px rgba(0, 0, 0, 0.0156862745), 0 6.6501px 5.32008px rgba(0, 0, 0, 0.0117647059), 0 2.76726px 2.21381px rgba(0, 0, 0, 0.0078431373);
+  padding-bottom: 20px;
+}
+.header__sticky .header__navigation {
+  padding: 0px;
+}
+.header__sticky .navigation__group {
+  display: flex;
+  align-items: center;
+}
+.header__sticky .sticky__logo {
+  display: flex;
+  font-family: "Helvetica";
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  margin-right: 25px;
+}
+.header__sticky .sticky__button-icon {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 7px;
+  margin-left: 20px;
+}
+.header__sticky .header__information {
+  display: none;
+}
 
 ._icon-navigation {
   color: #ff00ff;
