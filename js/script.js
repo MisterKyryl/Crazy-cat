@@ -10,7 +10,7 @@ window.addEventListener('scroll', function () {
 	}
 });
 
-// Многоуровневое меню
+// Определение системы и браузера
 const isMobile = {
 	Android: function () {
 		return navigator.userAgent.match(/Android/i);
@@ -36,3 +36,9 @@ const isMobile = {
 			isMobile.Windows());
 	}
 };
+
+if (isMobile.any()) {
+	document.body.classList.add('_touch');
+} else {
+	document.body.classList.add('_pc');
+}
