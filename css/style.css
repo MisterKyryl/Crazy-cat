@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Ribeye&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
 *,
 *::before,
@@ -104,17 +105,15 @@ body {
 }
 .header__sticky .sticky__logo {
   display: flex;
-  font-family: "Helvetica";
+  font-family: "Ribeye", cursive;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 28px;
   letter-spacing: 0.01em;
   cursor: pointer;
   padding-right: 25px;
 }
 .header__sticky .sticky__button-icon {
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 7px;
+  display: flex;
   padding-left: 20px;
 }
 .header__sticky .header__information {
@@ -137,14 +136,13 @@ body {
   align-items: center;
 }
 .navigation__links {
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 20px;
+  display: flex;
+}
+.navigation__link:not(:last-child) {
+  margin: 0 20px 0 0;
 }
 .navigation__social {
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 7px;
+  display: flex;
   margin-left: 20px;
 }
 .navigation__social img {
@@ -156,9 +154,9 @@ body {
   align-items: center;
 }
 .information__logo {
-  font-family: "Helvetica";
+  font-family: "Ribeye", cursive;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 28px;
   letter-spacing: 0.01em;
   cursor: pointer;
 }
@@ -215,7 +213,10 @@ body {
   .header__sticky .sticky__button-icon {
     padding-left: 10px;
   }
-  .header__sticky .navigation__links {
-    grid-gap: 10px;
+  .header__sticky .navigation__link:not(:last-child) {
+    margin: 0 10px 0 0;
+  }
+  .header__sticky ._icon-cart {
+    margin-right: 0;
   }
 }
